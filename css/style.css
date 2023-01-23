@@ -69,10 +69,10 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
-    background-image: url('image/bg-03.jpg');
+    background-image: url("../image/bg-03.jpg");
     background-size: cover;
-    margin-top: -75px;
-    height: 630px;
+    margin-top: -100px;
+    height: 680px;
 }
 
 /*sinopsis*/
@@ -208,7 +208,19 @@ nav ul li a{
     .featurette-heading {
         font-size: 50px;
       }
-  }
+       .logoIcon .logoYoutube svg{
+        width: 19px;    
+        display: flex; 
+    }
+    footer .nav-item{
+        display: flex;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    nav ul li{
+        margin-left: 320px;
+    }
+}
 
 
 @media (max-width: 767.98px) {
@@ -249,8 +261,8 @@ nav ul li a{
     }
     .footer{
         font-size: 14px;
-        margin-top: 15px;
-        margin-right: 80px;
+        margin-top: 10px;
+       
     }
     
     .logoFooter svg{
@@ -264,5 +276,51 @@ nav ul li a{
     }
     footer a img{
         width: 75px;
+    }
+ }
+
+ @media (max-width: 575.98px) { 
+    footer .nav-item{
+    display: none;
+    }
+    .logoIcon svg{
+        width: 19px;    
+        display: flex;                                                                                       
+    }
+    .full iframe{
+        width: 300px;
+    }
+    .featurette .sinopsis iframe{
+        width: 300px;
+    }
+    .logoIcon .logoYoutube svg{
+        width: 19px;    
+        display: flex;  
+        margin-left: 130px;   
+        margin-bottom: 10px;                                                                                  
+    }
+    footer #logoFooter{
+        margin-left: 130px;
+    }
+    
+    nav ul {
+        position: absolute;
+        left: 0;
+        top: 0;        
+        flex-direction: column;
+        background-color: #11133C;
+        width: 100vh;
+        height: 550px;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 1s;
+        margin-top: -10px;
+    }
+    nav ul.slide{
+        transform: translateX(0%);
+    }
+    nav ul li{
+        margin-right: 500px;
     }
  }
